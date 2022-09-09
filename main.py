@@ -70,7 +70,7 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
     count_message = 0
     base = read_base(base_name)
     key, server, ts = get_server(TOKEN, group)
-    print(f'Аккаунт {ac} запущен')
+    print(f'IHA | {ac} | account started')
     time_status = time.localtime()
     start_bot = time.time()
     if not group:
@@ -236,8 +236,8 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
                                 continue
                             break
                         count_message += 1
-                        print('#' * 10 + f' Аккаунт {ac} ' + '#' * 10)
-                        print(f'Сообщение: {message}')
+                        print(f'IHA | {ac} | new message!')
+                        print(f'Сообщениe: {message}')
                         print(f'Ответ: {ans}')
             else:
                 if i['type'] == 'message_new':
@@ -378,11 +378,11 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
                                 continue
                             break
                         count_message += 1
-                        print('#' * 10 + f' Аккаунт {ac} ' + '#' * 10)
+                        print(f'IHA | {ac} | new message!')
                         print(f'Сообщение: {message}')
                         print(f'Ответ: {ans}')
                         
-    print(f'Аккаунт {ac} выключен')
+    print(f'IHA | {ac} | account stopped')
 
 
 
