@@ -1,4 +1,5 @@
 requests
 gTTS
-django
+Django==3.2.12
 pillow
+psutil
