@@ -22,6 +22,7 @@ from func.friends import *
 from func.status import *
 from func.read_base import *
 from func.me import *
+from func.sysinfo import *
 from func.weather import *
 from func.video import *
 from func.audio import *
@@ -168,6 +169,8 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
                             ans = infa()
                         if message.lower()[:5] == 'когда':
                             ans = when()
+                        if message.lower()[:7] == 'sysinfo':
+                            ans = sysinfo()
                         if message.lower()[:6] == 'онлайн':
                             ans, disable_mentions = online(i, message, TOKEN, disable_mentions, group)
                         if message.lower()[:5] in ('музыка', 'аудио'):
