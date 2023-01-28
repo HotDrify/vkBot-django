@@ -1,4 +1,4 @@
-# iha django | 1.0.2
+# iha django 
 Некое подобие восстановления проекта.
 
 Оригинал: https://github.com/Roofchick/vkbot_django
