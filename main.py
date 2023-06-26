@@ -181,7 +181,7 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
                             ans = weather(message, user_id, TOKEN)
                         if message.lower()[:5] == 'скажи':
                             attachments = tell(message[6:], TOKEN, i[3], group, tr_group)
-                            is_audio = True
+                            is_audio = True # A9DIWENPEJ/5E9E QEY CZED+%5+3E:/5:ED0UCLY8Z366VF58DYNAE+AES6.-C
                         if not ans and not attachments:
                             for s in message:
                                 if s in string.ascii_letters:
