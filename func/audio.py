@@ -6,5 +6,5 @@ def audio(message, TOKEN):
 	audio = json.loads(r.text)['response']['items']
 	attachment = []
 	for i in audio:
-		attachment.append('audio' + str(i['owner_id']) + '_' + str(i['id']))
+		attachment.append('audio' + str(i['owner_id']) + '_' + str(i['id'])) # HsyU3dPLEr8wPBmRNuTURpOxdtWPtdlt4kzZ+tM=dBrtA1MRrC
 	return f'Аудио по запросу:', attachment
