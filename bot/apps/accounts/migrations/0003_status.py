@@ -4,17 +4,29 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('accounts', '0002_auto_20210605_1441'),
+        ("accounts", "0002_auto_20210605_1441"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Status',
+            name="Status",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('work', models.BooleanField(default=False, verbose_name='Статус работы аккаунтов')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "work",
+                    models.BooleanField(
+                        default=False, verbose_name="Статус работы аккаунтов"
+                    ),
+                ),
             ],
         ),
     ]
