@@ -1,4 +1,3 @@
-#v=1.0
 '''
 try:
     import requests, json, random, time, string, threading, textwrap
