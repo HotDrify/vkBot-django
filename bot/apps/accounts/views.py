@@ -176,9 +176,7 @@ def start(request):
 		start_bot()
 	
 		return render(request, 'accounts/list.html', {'accounts_list': accounts_list, 'start': a.work})
-
-	else:
-		return render(request, 'accounts/list.html', {'accounts_list': accounts_list, 'start': a.work})
+	return render(request, 'accounts/list.html', {'accounts_list': accounts_list, 'start': a.work})
 	
 	
 def end(request):

@@ -31,7 +31,7 @@ def get_upd(TOKEN, key, server, ts, group):
 				if upd['failed'] == 1:
 					ts = upd['ts']
 					return get_upd(TOKEN, key, server, ts)
-				elif upd['failed'] in (2,3):
+				if upd['failed'] in (2,3):
 					key, server, ts = get_server(TOKEN, group)
 					return get_upd(TOKEN, key, server, ts)
 			ts = upd['ts']
