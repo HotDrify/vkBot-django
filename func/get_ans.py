@@ -42,5 +42,4 @@ def get_ans(message, base, commands, TOKEN, peer_id, group, tr_group, voice_bot,
 					ans = regular(ans, user_id, count_message, start_bot, TOKEN, regulars)
 					break
 			return '', tell(ans, TOKEN, peer_id, group, tr_group), True
-		else:
-			return ans, '', False
+		return ans, '', False
