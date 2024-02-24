@@ -1,6 +1,4 @@
 import psutil
-import os
-import time
 cup_per = psutil.cpu_percent(interval=0.5)
 memory_info = psutil.virtual_memory()
 disk_info = psutil.disk_usage("/")
