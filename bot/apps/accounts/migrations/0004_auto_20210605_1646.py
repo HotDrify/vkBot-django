@@ -4,20 +4,19 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     dependencies = [
-        ('accounts', '0003_status'),
+        ("accounts", "0003_status"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='status',
-            name='name',
-            field=models.TextField(default='Ы', verbose_name='Э'),
+            model_name="status",
+            name="name",
+            field=models.TextField(default="Ы", verbose_name="Э"),
         ),
         migrations.AlterField(
-            model_name='account',
-            name='commands',
-            field=models.TextField(default='.', verbose_name='Команды (не работает)'),
+            model_name="account",
+            name="commands",
+            field=models.TextField(default=".", verbose_name="Команды (не работает)"),
         ),
     ]

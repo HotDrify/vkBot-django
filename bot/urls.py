@@ -4,8 +4,8 @@ from django.urls import path, include
 from django.conf.urls import url
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.urls')),
-    path('', include('accounts.urls')),
-    url(r'^favicon\.ico$',RedirectView.as_view(url='/images/favicon.ico')),
+    path("admin/", admin.site.urls),
+    path("accounts/", include("accounts.urls")),
+    path("", include("accounts.urls")),
+    url(r"^favicon\.ico$", RedirectView.as_view(url="/images/favicon.ico")),
 ]
