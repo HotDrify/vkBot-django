@@ -1,4 +1,5 @@
-import requests, json
+import requests
+import json
 
 def weather(message, user_id, TOKEN):
 	if message[7:]:

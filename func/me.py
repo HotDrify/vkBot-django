@@ -1,4 +1,6 @@
-import requests, json, textwrap
+import requests
+import json
+import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 def me(message, user, TOKEN):

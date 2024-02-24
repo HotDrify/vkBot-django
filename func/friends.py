@@ -1,4 +1,6 @@
-import requests, json, time
+import requests
+import json
+import time
 
 def friends(TOKEN, ac):
 	followers = requests.get('https://api.vk.com/method/users.getFollowers', params = {'access_token': TOKEN, 'v': 5.131})

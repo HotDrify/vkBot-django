@@ -1,4 +1,5 @@
-import requests, json
+import requests
+import json
 
 def get_server(TOKEN, group):
 	while True:

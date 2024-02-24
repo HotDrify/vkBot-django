@@ -1,4 +1,6 @@
-import requests, json, time
+import requests
+import json
+import time
 
 def online(i, message, TOKEN, disable_mentions, group):
 	if group:

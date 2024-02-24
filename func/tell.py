@@ -1,5 +1,7 @@
 from gtts import gTTS
-import requests, json, string
+import requests
+import json
+import string
 
 def tell(message, TOKEN, peer_id, group, tr_group):
 	if message[0] in string.ascii_letters:

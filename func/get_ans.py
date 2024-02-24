@@ -1,4 +1,5 @@
-import random, time
+import random
+import time
 from func.tell import *
 from func.regular import *
 from func.append_attach import *
