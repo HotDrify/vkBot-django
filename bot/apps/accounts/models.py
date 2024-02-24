@@ -16,14 +16,14 @@ class Account(models.Model):
 	group = models.PositiveIntegerField('id сообщества, у пользователей = 0', default=0)
 	commands = models.TextField('Команды (не работает)', default='.')
 	reply = models.BooleanField('Пересылать сообщения собеседника в беседах', default=True)
-	
+
 
 class Status(models.Model):
-	
+
 	name = models.TextField('Э', default='Ы')
-	
+
 	work = models.BooleanField('Статус работы аккаунтов', default=False)
-	
-	
+
+
 	def __str__(self):
 		return self.name

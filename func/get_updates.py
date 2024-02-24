@@ -21,7 +21,7 @@ def get_server(TOKEN, group):
 			return key, server, ts
 		except:
 			continue
-	
+
 
 def get_upd(TOKEN, key, server, ts, group):
 	while True:

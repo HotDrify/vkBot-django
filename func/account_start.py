@@ -6,9 +6,9 @@ from accounts.models import Account
 
 
 def start_bot():
-	
+
 	for a in Account.objects.all():
-		
+
 		ac = a.id
 		TOKEN = a.token
 		STATUS = a.status
@@ -23,8 +23,8 @@ def start_bot():
 		commands = a.commands
 		voice_bot = a.voice_bot
 		reply = a.reply
-		
-		
+
+
 		try:
 			threading.Thread(target=main, args=(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name, base_name, group, commands, voice_bot, reply)).start()
 		except Exception as err:

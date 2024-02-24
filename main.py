@@ -48,12 +48,12 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
     except Exception as err:
         print(err)
         cities = False
-    	
+
     with open('blacklist.txt') as f:
     	f = f.read()
     	blacklist = f.split('\n')[2:]
     	black_mess = f.split('\n')[0]
-    	
+
     commands = []
     cities_users = {}
     disable_mentions = False
@@ -67,7 +67,7 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
         BotID = BotID['response'][0]['id']
     else:
         BotID = group
-    
+
     count_message = 0
     base = read_base(base_name)
     key, server, ts = get_server(TOKEN, group)
@@ -384,7 +384,7 @@ def main(ac, TOKEN, STATUS, SLEEP, MARK, NAME, auto_friends, ls_user, group_name
                         print(f'IHA | {ac} | new message!')
                         print(f'Сообщение: {message}')
                         print(f'Ответ: {ans}')
-                        
+
     print(f'IHA | {ac} | account stopped')
 
 
