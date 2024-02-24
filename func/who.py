@@ -1,4 +1,6 @@
-import requests, json, random
+import requests
+import json
+import random
 
 def who(i, TOKEN, group):
 	if group:

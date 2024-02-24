@@ -1,4 +1,5 @@
-import requests, json
+import requests
+import json
 
 def video(message, TOKEN):
 	mess = message[6:]

@@ -1,4 +1,6 @@
-import requests, json, time
+import requests
+import json
+import time
 
 def regular(mess, user, count_message, start_bot, TOKEN, regulars):
 	ans = ''

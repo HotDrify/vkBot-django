@@ -1,4 +1,7 @@
-import requests, json, random, textwrap
+import requests
+import json
+import random
+import textwrap
 from PIL import Image, ImageDraw, ImageFont
 
 def tru(message, user, i, TOKEN):

@@ -1,4 +1,5 @@
-import requests, json
+import requests
+import json
 
 def audio(message, TOKEN):
 	mess = message[6:]
